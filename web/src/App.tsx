@@ -1,4 +1,6 @@
 
-const App = () => <button>enter</button>
+import { Widget } from "./Components/Widget";
 
-export {App};
+export function App() {
+  return <Widget />
+}
