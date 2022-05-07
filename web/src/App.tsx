@@ -1,4 +1,4 @@
 
-const App = () => <h1>Hello World</h1>
+const App = () => <button>enter</button>
 
 export {App};
