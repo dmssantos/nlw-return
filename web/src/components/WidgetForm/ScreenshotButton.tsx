@@ -5,7 +5,11 @@ import { Loading } from "./Loading";
 
 // npm install html2canvas - instalar
 
-export function ScreenshotButton() {
+interface ScreenshotButtonProps {
+  onScreenshotTook: (screenshot: string) => void
+}
+
+export function ScreenshotButton({ onScreenshotTook }: ScreenshotButtonProps) {
   const [isTakingScreenshot, setIsTakingscreenshot] = useState(false);
 
   async function HandleTakeScreenshot() {
@@ -14,6 +18,7 @@ export function ScreenshotButton() {
     const canvas = await html2canvas(document.querySelector('html')!);
     const base64image = canvas.toDataURL('image/png');
 
+    onScreenshotTook(base64image);
     setIsTakingscreenshot(false);
   }
 
@@ -23,8 +28,8 @@ export function ScreenshotButton() {
       onClick={HandleTakeScreenshot}
       className="p-2 bg-zinc-800 rounded-md border-transparent hover:bg-zinc-700 transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-zinc-900 focus:ring-brand-500"
     >
-      { isTakingScreenshot ? <Loading /> : <Camera className="w-6 h-6" />}
-      
+      {isTakingScreenshot ? <Loading /> : <Camera className="w-6 h-6" />}
+
     </button>
   )
 }
