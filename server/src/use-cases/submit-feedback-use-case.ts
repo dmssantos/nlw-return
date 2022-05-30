@@ -6,7 +6,7 @@ interface submitFeedbackUseCaseRequest {
   screenshot: string;
 }
 
-export class submitFeedbackUseCase {
+export class SubmitFeedbackUseCase {
   constructor (
    private feedbacksRepository: FeedbacksRepository
   ) {}
