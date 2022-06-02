@@ -1,0 +1,13 @@
+01:31:50
+
+npm install jest -D
+npx jest --init
+y y node y v8 y
+
+npm install ts-node -D
+
+npm i -D @swc/jest
+
+alterar arquivo jest.config: 01:35:20
+
+npm i @types/jest -D
