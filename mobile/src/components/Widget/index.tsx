@@ -11,14 +11,15 @@ import { styles } from './styles';
 function Widget() {
   const bottomSheetRef = useRef<BottomSheet>(null);
 
-  function handleOPen() {
+  function handleOpen() {
     bottomSheetRef.current?.expand();
   }
+
   return (
     <>
       <TouchableOpacity
         style={styles.button}
-        onPress={handleOPen}
+        // onPress={handleOpen}
       >
         <ChatTeardropDots
           size={24}
@@ -40,5 +41,4 @@ function Widget() {
     </>
   );
 }
-
 export default gestureHandlerRootHOC(Widget);
