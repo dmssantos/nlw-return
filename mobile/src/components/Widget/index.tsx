@@ -31,7 +31,7 @@ function Widget() {
       <BottomSheet
         ref={bottomSheetRef}
         snapPoints={[1, 280]}
-        backgroundSyle={styles.modal}
+        backgroundStyle={styles.modal}
         handleIndicatorStyle={styles.indicator}
       >
         <Options />
