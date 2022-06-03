@@ -1,5 +1,0 @@
-00:42:40
-
-expo install @gorhom/bottom-sheet@^4
-expo install react-native-reanimated
-expo install react-native-gesture-handler
