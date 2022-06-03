@@ -2,9 +2,9 @@ import React from 'react';
 import { View, Text } from 'react-native';
 
 import { Copyright } from '../Copyright';
-import { feedbackTypes } from '../../utils/feedbackTypes';
 import { Option } from '../Option';
 
+import { feedbackTypes } from '../../utils/feedbackTypes';
 import { styles } from './styles';
 
 export function Options() {

@@ -5,10 +5,12 @@ import BottomSheet from '@gorhom/bottom-sheet';
 import { gestureHandlerRootHOC } from 'react-native-gesture-handler';
 
 import { Options } from '../Options';
-import { theme } from '../../theme';
+
 import { styles } from './styles';
+import { theme } from '../../theme';
 
 function Widget() {
+
   const bottomSheetRef = useRef<BottomSheet>(null);
 
   function handleOpen() {
@@ -17,18 +19,13 @@ function Widget() {
 
   return (
     <>
-      <TouchableOpacity
-        style={styles.button}
-        // onPress={handleOpen}
-      >
+      <TouchableOpacity style={styles.button} onPress={handleOpen}>
         <ChatTeardropDots
           size={24}
-          weight={"bold"}
+          weight="bold"
           color={theme.colors.text_on_brand_color}
         />
-
       </TouchableOpacity>
-
       <BottomSheet
         ref={bottomSheetRef}
         snapPoints={[1, 280]}
@@ -37,8 +34,8 @@ function Widget() {
       >
         <Options />
       </BottomSheet>
-
     </>
   );
 }
+
 export default gestureHandlerRootHOC(Widget);
