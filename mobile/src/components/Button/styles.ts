@@ -8,11 +8,11 @@ export const styles = StyleSheet.create({
     backgroundColor: theme.colors.brand,
     alignItems: 'center',
     justifyContent: 'center',
-    borderRadius: 4
+    borderRadius: 4,
   },
   title: {
     fontSize: 14,
     fontFamily: theme.fonts.medium,
-    color: theme.colors.text_on_brand_color
-  }
+    color: theme.colors.text_on_brand_color,
+  },
 });

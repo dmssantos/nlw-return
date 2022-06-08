@@ -1,14 +1,12 @@
 import React from 'react';
-import { View, Text } from 'react-native';
+import { Text, View } from 'react-native';
 
 import { styles } from './styles';
 
 export function Copyright() {
   return (
     <View>
-      <Text style={styles.text}>
-        Feito com S2 por DavidSantos
-      </Text>
+      <Text style={styles.text}>Feito com ♥ pela Rocketseat</Text>
     </View>
   );
 }

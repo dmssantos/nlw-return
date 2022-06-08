@@ -20,6 +20,6 @@ export const styles = StyleSheet.create({
     fontSize: 14,
     marginTop: 8,
     fontFamily: theme.fonts.medium,
-    color: theme.colors.text_primary
-  }
+    color: theme.colors.text_primary,
+  },
 });

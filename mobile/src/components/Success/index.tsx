@@ -13,25 +13,14 @@ interface Props {
 export function Success({ onSendAnotherFeedback }: Props) {
   return (
     <View style={styles.container}>
-      <Image
-        source={successImg}
-        style={styles.image}
-      />
+      <Image source={successImg} style={styles.image} />
+      <Text style={styles.title}>Agradecemos o feedback</Text>
 
-      <Text style={styles.title}>
-        Agradecemos o feedback
-      </Text>
-
-      <TouchableOpacity
-        style={styles.button}
-        onPress={onSendAnotherFeedback}
-      >
-        <Text style={styles.buttomTitle}>
-          Quero enviar outro
-        </Text>
-
-        <Copyright />
+      <TouchableOpacity style={styles.button} onPress={onSendAnotherFeedback}>
+        <Text style={styles.buttonTitle}>Quero enviar outro</Text>
       </TouchableOpacity>
+
+      <Copyright />
     </View>
   );
 }
